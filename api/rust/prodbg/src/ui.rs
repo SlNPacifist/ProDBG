@@ -1,5 +1,6 @@
 use std::ptr;
 use ui_ffi::*;
+use ui_context::UiContext;
 use std::mem;
 use std::fmt;
 use std::fmt::Write;
@@ -185,7 +186,7 @@ pub enum ImGuiCol {
     ModalWindowDarkening,  // darken entire screen when a modal window is active
 }
 
-
+#[derive(Debug, Clone, Copy)]
 pub enum ImGuiStyleVar
 {
     Alpha = 0,           // float
@@ -826,6 +827,10 @@ impl Ui {
                 None
             }
         }
+    }
+
+    pub fn context(&mut self) -> UiContext {
+        UiContext::new(self)
     }
 }
 

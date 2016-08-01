@@ -45,6 +45,7 @@ bitflags! {
 
 #[repr(C)]
 #[derive(Debug)]
+#[derive(Clone)]
 pub struct PDVec2 {
     pub x: c_float,
     pub y: c_float,

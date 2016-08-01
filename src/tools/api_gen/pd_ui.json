@@ -49,7 +49,7 @@
    "struct": [
    {
        "name": "PDVec2",
-       "attribute": [ {"name": "C-ABI"}, {"name": "DERIVE-DBG"} ],
+       "attribute": [ {"name": "C-ABI"}, {"name": "DERIVE-DBG"}, {"name": "DERIVE-CLN"} ],
        "var": [{ "float":"x" }, { "float": "y" }]
    },
    {

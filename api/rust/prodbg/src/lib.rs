@@ -12,6 +12,7 @@ pub mod capstone_service;
 pub mod dialogs;
 pub mod ui_ffi;
 pub mod ui;
+pub mod ui_context;
 pub mod view;
 pub mod cfixed_string;
 pub mod docking;
@@ -28,6 +29,7 @@ pub use capstone_service::*;
 pub use message_service::*;
 pub use dialogs::*;
 pub use ui::*;
+pub use ui_context::*;
 pub use ui_ffi::{PDVec2, PDUIWINDOWFLAGS_NOTITLEBAR, PDUIWINDOWFLAGS_NORESIZE,
     PDUIWINDOWFLAGS_NOMOVE, PDUIWINDOWFLAGS_NOSCROLLBAR, PDUIWINDOWFLAGS_NOSCROLLWITHMOUSE,
     PDUIWINDOWFLAGS_NOCOLLAPSE, PDUIWINDOWFLAGS_ALWAYSAUTORESIZE, PDUIWINDOWFLAGS_SHOWBORDERS,
